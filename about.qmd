@@ -1,0 +1,7 @@
+---
+title: "About me"
+---
+
+Associate Professor of Physics at the Western Norway University of Applied Sciences.
+
+I teach math and physics, do research on superconductivity, and have a passion for computers and programming.

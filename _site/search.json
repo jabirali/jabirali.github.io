@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Technical Blog",
+    "section": "",
+    "text": "Post 1\nPost 2"
+  },
+  {
+    "objectID": "blog.html#recent-posts",
+    "href": "blog.html#recent-posts",
+    "title": "Technical Blog",
+    "section": "",
+    "text": "Post 1\nPost 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
+    "section": "",
+    "text": "Associate Professor of Physics at the Western Norway University of Applied Sciences.\nI teach math and physics, do research on superconductivity, and have a passion for computers and programming.\n\n\n\n\n\n\n\n\n\nBlog test\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome to My Research Blog",
+    "section": "",
+    "text": "Hi, I’m Jabir Ali Ouassou, an Associate Professor at Western Norway University of Applied Sciences. This is my personal site, where I share my research updates, technical articles, and Python code tutorials.\nCheck out my GitHub, Google Scholar, or my HVL Employee Page."
+  },
+  {
+    "objectID": "blog/test.html",
+    "href": "blog/test.html",
+    "title": "Blog test",
+    "section": "",
+    "text": "This is a test.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: .
+
+website:
+  title: "Jabir Ali Ouassou"
+  description: "Research and technical blog"
+  navbar:
+    right:
+      - text: "About me"
+        icon: house
+        href: about.qmd
+      - icon: github
+        text: "Github"
+        href: https://github.com/jabirali
+      - icon: journals
+        text: "Scholar"
+        href: https://scholar.google.com/citations?user=SbyugkkAAAAJ
+      - icon: buildings
+        text: "Institution"
+        href: https://www.hvl.no/en/employee/?user=Jabir.Ali.Ouassou
+      - icon: at
+        text: "Contact"
+        href: mailto:jabir.ali.ouassou@hvl.no
+
+format:
+  html:
+    theme: "lux"
+    toc: true
+    toc-depth: 2
