@@ -4,20 +4,20 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "Associate Professor of Physics at the Western Norway University of Applied Sciences.\nI teach math and physics, do research on superconductivity, and have a passion for computers and programming."
+    "text": "I’m an Associate Professor of Physics at the Western Norway University of Applied Sciences. I am currently also a Guest Editor for the “Journal of Superconductivity and Novel Magnetism”.\nI teach mathematics, physics, and programming for engineers; do research on superconductivity (theory and numerics); and have a passion for programming and computers in general. I was awarded the Birkeland Prize 2020 – a national award for the best PhD thesis in Physics – for my research on superconductivity in magnetic nanostructures.\nPlease see my Google Scholar for a list of publications or my Github account for a list of open-source projects. Interested in collaborating or sharing ideas? Send me an email!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jabir Ali Ouassou",
     "section": "",
-    "text": "Blog test\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "First post\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/test.html",
-    "href": "blog/test.html",
-    "title": "Blog test",
+    "objectID": "blog/first.html",
+    "href": "blog/first.html",
+    "title": "First post",
     "section": "",
-    "text": "This is a test."
+    "text": "This is the first post on my new website, which is generated using the static site generator Quarto. Hopefully, more content will be posted here soon…"
   }
 ]

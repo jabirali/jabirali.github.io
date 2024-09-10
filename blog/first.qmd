@@ -1,0 +1,9 @@
+---
+title: First post
+date: 2024-09-10
+categories: [website]
+---
+
+This is the first post on my new website, which is generated using the
+static site generator [Quarto](https://quarto.org/). Hopefully, more
+content will be posted here soon...
