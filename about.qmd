@@ -2,7 +2,7 @@
 title: "About me"
 ---
 
-![](assets/profile.jpg){width=35% style="float:left; margin-right: 20px;"}
+![](assets/profile.jpg){width=40% style="float:left; margin-right: 20px;"}
 
 I'm an [Associate Professor of Physics][5] at the Western Norway University of
 Applied Sciences. I am currently also a [Guest Editor][2] for the "Journal of
@@ -16,7 +16,7 @@ superconductivity in magnetic nanostructures][7].
 
 Please see my [Google Scholar][3] for a list of publications or my [Github
 account][4] for a list of open-source projects. Interested in collaborating or
-sharing ideas? Send me an [email][6]!
+sharing ideas? Feel free to send me an [email][6].
 
 [1]: https://dnva.no/detskjer/2021/09/birkelandprisen-til-jabir-ali-ouassou
 [2]: https://link.springer.com/collections/gjajcchaaf

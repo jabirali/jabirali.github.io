@@ -25,6 +25,9 @@ website:
 
 format:
   html:
-    theme: "lux"
+    theme: spacelab
     toc: true
     toc-depth: 2
+execute: 
+  cache: true
+jupyter: python3

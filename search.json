@@ -4,14 +4,21 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "I’m an Associate Professor of Physics at the Western Norway University of Applied Sciences. I am currently also a Guest Editor for the “Journal of Superconductivity and Novel Magnetism”.\nI teach mathematics, physics, and programming for engineers; do research on superconductivity (theory and numerics); and have a passion for programming and computers in general. I was awarded the Birkeland Prize 2020 – a national award for the best PhD thesis in Physics – for my research on superconductivity in magnetic nanostructures.\nPlease see my Google Scholar for a list of publications or my Github account for a list of open-source projects. Interested in collaborating or sharing ideas? Send me an email!"
+    "text": "I’m an Associate Professor of Physics at the Western Norway University of Applied Sciences. I am currently also a Guest Editor for the “Journal of Superconductivity and Novel Magnetism”.\nI teach mathematics, physics, and programming for engineers; do research on superconductivity (theory and numerics); and have a passion for programming and computers in general. I was awarded the Birkeland Prize 2020 – a national award for the best PhD thesis in Physics – for my research on superconductivity in magnetic nanostructures.\nPlease see my Google Scholar for a list of publications or my Github account for a list of open-source projects. Interested in collaborating or sharing ideas? Feel free to send me an email."
+  },
+  {
+    "objectID": "blog/bodge.html",
+    "href": "blog/bodge.html",
+    "title": "Bodge: Python BdG solver",
+    "section": "",
+    "text": "My Python package for numerically solving the Bogoliubov–de Gennes equations has been published in the Journal of Open Source Software (JOSS)!\n\nThe Bodge package is available on GitHub and via PyPI, but is most easily be installed via the latter:\npip3 install bodge\nAlternatively, if you want GPU-accelerated calculations using NVIDIA CUDA:\npip3 install 'bodge[cuda]'\nThe aim of this package has been to make it as simple as possible to work with tight-binding models for superconductivity in Python. Defining a simple superconductor/ferromagnet hybrid on a \\(100\\times100\\) lattice is e.g. done by:\n\nfrom bodge import *\n\nlattice = CubicLattice((100, 100, 1))\nsystem = Hamiltonian(lattice)\n\nt = 1.0\nμ = -3.0 * t\nΔ0 = 0.3 * t\nM3 = 0.3 * Δ0\n\nwith system as (H, Δ):\n    for i in lattice.sites():\n        H[i, i] = -μ * σ0 - M3 * σ3\n        Δ[i, i] = -Δ0 * jσ2\n    for i, j in lattice.bonds():\n        H[i, j] = -t * σ0\n\nThat’s all that is required to define the corresponding Hamiltonian matrix, which internally is represented as a BSR sparse matrix for efficiency and scalability. From there on Bodge provides a number of different methods to work with that Hamiltonian matrix, including various sparse matrix algorithms, dense matrix algorithms, and GPU-accelerated algorithms. For instance, to plot the LDOS at the center of the system above we can run:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ni = (50, 50, 0)\nω = np.linspace(-2*Δ0, 2*Δ0, 100)\nρ = system.ldos(i, ω)\n\nplt.xlabel(r\"Quasiparticle energy $\\omega/t$\")\nplt.ylabel(r\"LDOS $\\rho_i(ω)/t$\")\nplt.plot(ω, ρ)\n\n\n\n\n\n\n\n\nThis example uses an efficient sparse matrix algorithm internally, which runs in less than a minute on my MacBook despite the \\(100\\times100\\) lattice. In this picture, we see a typical example of a “spin-split gapped” density of states that is typical for a superconductor/ferromagnet hybrid structure. To make the model more realistic, one can very easily extend the example above to add spatial inhomogeneities of every kind. Moreover, the Bodge package has also been used to represent more exotic materials such as altermagnets and unconventional superconductors, which is quite straight-forward.\nSee the JOSS paper, GitHub page, and Bodge tutorial for more information on how this software package can be applied to your research. Moreover, feel free to reach out via email if you need help."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jabir Ali Ouassou",
     "section": "",
-    "text": "First post\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Bodge: Python BdG solver\n\n\n\n\n\n\npython\n\n\ncondmat\n\n\n\n\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFirst post\n\n\n\n\n\n\nwebsite\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/first.html",
